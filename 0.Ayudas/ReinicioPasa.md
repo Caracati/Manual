@@ -24,7 +24,7 @@
 - ### Carga de inventario (Paso tres opcional)
   - Es necesario corroborar que la carga del inventario se hizo de forma correcta
   - Esta carga se tiene planeada se ejecute de 6:30 am  a 7:00 am
-  - Por lo que es necesario validar dentro de la basee de datos dicha carga de forma correcta para poder realizar esto es necesario realizar la consulta en la base de datos de Tandrify1 la cual se encuentra en este mismo documento en la seccion de [Conexión](#conexion) 
+  - Por lo que es necesario validar dentro de la base de datos dicha carga de forma correcta para poder realizar esto es necesario realizar la consulta en la base de datos de Tandrify1 la cual se encuentra en este mismo documento en la sección de **Conexión**
   - Si al realizar la consulta con la fecha actual el valor del conunt es mucho menor a los 300,000 se puede entender que la carga no fue exitosa y se debe de ejecutar una petición a las siguientes URLS
     - pasa.tandrify.com/api/CronJob/C7FC61FE-5A56-40A4-DE2E-08D69D08AD73
     - pasa.tandrify.com/api/CronJob/29FBD21B-E2B4-4D9A-97E1-456328A24ED2
