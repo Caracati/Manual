@@ -26,16 +26,16 @@
   - Esta carga se tiene planeada se ejecute de 6:30 am  a 7:00 am
   - Por lo que es necesario validar dentro de la base de datos dicha carga de forma correcta para poder realizar esto es necesario realizar la consulta en la base de datos de Tandrify1 la cual se encuentra en este mismo documento en la sección de **Conexión**
   - Si al realizar la consulta con la fecha actual el valor del conunt es mucho menor a los 300,000 se puede entender que la carga no fue exitosa y se debe de ejecutar una petición a las siguientes URLS
-    - pasa.tandrify.com/api/CronJob/C7FC61FE-5A56-40A4-DE2E-08D69D08AD73
-    - pasa.tandrify.com/api/CronJob/29FBD21B-E2B4-4D9A-97E1-456328A24ED2
+    - pasa.tandrify.com/api/CronJob/{Solicitarid}
+    - pasa.tandrify.com/api/CronJob/{Solciitarid}
   - Para obtener el valor de dicho get 
     - Desde cloud watch se saca el id del cient desde las reglas (Rules)
     - En IntefacePasaMx - Targets - Input (Constant) el valor de compantyId es el valor que corresponde a la url
     - La lambda se llama TandrifyInterface
   
 ## Conexión
-- Data Source=caracatisqlserver.coombpg4tqsi.us-east-1.rds.amazonaws.com;Initial Catalog=tandrify;
-- User ID=tandrifyapp;
+- Data Source={SolicitarCadena};
+- User ID={SolicitarUsuario};
 - Password={SolicitarContraseña}
 - La base de datos es tandrify
 - Con el siguiente query se puede saber si se ejecutó la interface, par esto debe de haber mas de 300,000 registros si el siguiente query muestre resultados menores despues de las 8.00 se debe de ejecutar el get, la fecha debe de ser la fecha actual

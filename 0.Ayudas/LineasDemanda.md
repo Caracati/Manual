@@ -9,7 +9,7 @@ Base de datos
 En la tabla demandSettings se da de alta con el nuevo nombre, ya se hizo el ejemplo para amparts con el id 41 y 45
 
 
-Codigo
-En sam app tentants generic inteface sale en app, dentro de la funcion de getModel, aquí se determina lo de las lineas de demanda utilizando el switch se puede tomar el ejemplo de farmacias del ahorro o de amparts, en esto código se determina como debe de finalizar el archivo para hacer la carga con la linea de demanda correcta.
+## Codigo
+- En sam app tentants generic inteface sale en app, dentro de la funcion de getModel, aquí se determina lo de las lineas de demanda utilizando el switch se puede tomar el ejemplo de farmacias del ahorro o de amparts, en esto código se determina como debe de finalizar el archivo para hacer la carga con la linea de demanda correcta.
 
 
