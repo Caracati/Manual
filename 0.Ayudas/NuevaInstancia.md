@@ -51,39 +51,43 @@
 ## Registros en base de datos (usando adosa)
 
 - Para crear los roles especifos de la instancia
-  - select *
+```sql
+select *
 from tandrify.role -- 70, 71
 
-  - INSERT INTO tandrify.role
+INSERT INTO tandrify.role
 (tenantId, name)
 VALUES('adosa', 'Admin'),  -- 70 --REF 68
 	  ('adosa', 'Planner');-- 71 --REF 65
-
+```
 - Para asignar las rutas de los roles creados
-  - Select *
+```sql
+Select *
 from tandrify.frontendRoute
 
-  - INSERT INTO tandrify.frontendRoute
+INSERT INTO tandrify.frontendRoute
 (tenantId, name, discriminator, roleId)
 VALUES('adosa', '^/*', 'roleFrontendRoute', 70),
 	  ('adosa', '^/demand/*', 'roleFrontendRoute', 71);
-
+```
 - Para crear los usuarios que van a utilizar la nueva interface
-  - select *
+```sql
+select *
 from tandrify.user u 
 where email in ('rtello@caracati.com', 'jsalinas@caracati.com','rvaldes@delphuscg.com', 'dguajardo@delphuscg.com', 'dherrera@delphuscg.com')
 and tenantId = 'adosa'
 
-  -  INSERT INTO tandrify.user
+INSERT INTO tandrify.user
 (tenantId, email)
 VALUES('adosa', 'rvaldes@delphuscg.com'), 273
 ('adosa', 'dguajardo@delphuscg.com'),274
 ('adosa', 'dherrera@delphuscg.com'),275
 ('adosa', 'jsalinas@caracati.com'),276
 ('adosa', 'rtello@caracati.com');277
-
+```
 - Para enlazar el o los usuarios creados con el rol en especifico
-  - select *
+```sql
+select *
 from tandrify.userRole ur 
 
   - INSERT INTO tandrify.userRole
@@ -93,6 +97,6 @@ VALUES(273, 70),
 (275, 70),
 (276, 70),
 (277, 70);
-
+```
 
 
