@@ -16,7 +16,7 @@
 - Dentro de los nodos a utilizar es posible buscar amazon y el primer nodo a utiliar para autenticar es el nodo
   - Amazon Authenticator
     - Seleccionar el Acces Key Id and Secrete Key
-      - Agregar las credenciales (Realizar pureba de conexión) 
+      - Agregar las credenciales (Realizar prueba de conexión) 
   - Amazon S3 Connector
     - En este nodo se debe de especificar el directorio del cual se requiere obtener los archivios /nombre_del_directorio/carpeta (*Este directorio debe de pertenecer a la llave y secreto creado con aterioridad*)
   - File Reader (Solo se usa para la explicación)
