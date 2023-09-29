@@ -1,6 +1,6 @@
 # Guía de Colaboración en Git
 
-Esta guía establece las reglas y recomendaciones para trabajar en equipo utilizando Git como sistema de control de versiones. El objetivo es mantener un flujo de trabajo ordenado y eficiente.
+Esta guía establece las reglas y recomendaciones para trabajar en equipo utilizando Git como sistema de control de versiones en Tandrify. El objetivo es mantener un flujo de trabajo ordenado y eficiente.
 
 ## Ramas
 
@@ -33,7 +33,7 @@ Ejemplo de un commit:
 git commit -m "feat: Agregar función de autenticación de usuarios"
 ```
 ## Pull Requests (PR) 
->### Actualmente no se esta utilizando esta opción de PR
+>### *Actualmente no se esta utilizando esta opción de PR*
 >
 >Antes de fusionar una rama en la rama principal (generalmente main o master), se debe abrir un Pull Request (PR) para >revisión. El PR debe incluir:
 >
@@ -57,10 +57,14 @@ Todas las solicitudes de extracción (PR) deben ser revisadas por al menos un mi
 - Comprobar la calidad del código.
 - Asegurarse de que los cambios se adhieran a los estándares del proyecto.
 - Identificar problemas potenciales.
+- Aunque no se tenga o no se esté implementado el PR, se puede validar el código también para
+  - Entender un poco mas el funcionamiento
+  - Ver ejemplos de otros desarrolladores y tener mejores ideas
+
 
 ## Resolución de Conflictos
-Si surge un conflicto al fusionar una rama, se debe resolver antes de la fusión. Asegúrate de que la rama esté actualizada con la rama principal y que no haya conflictos antes de solicitar la revisión.
+Si surge un conflicto al fusionar una rama, se debe resolver antes de la fusión. 
 
 ## Mantenimiento Continuo
-El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilidad de los desarrolladores. Elimina las ramas una vez fusionadas y resueltas.
+El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilidad de los desarrolladores. Es buena practica eliminar las ramas una vez fusionadas y resueltas.
   
