@@ -46,5 +46,5 @@ WHERE CONVERT(DATE, transaction_date) = CONVERT(DATE, GETDATE());
 - en caso de haaber menos de 300 ejecutar 
 ```sql
 -- DELETE FROM [tandrify].[dbo].[AX_ib_inventory]
-WHERE CONVERT(DATE, transaction_date) = CONVERT(DATE, GETDATE());
+-- WHERE CONVERT(DATE, transaction_date) = CONVERT(DATE, GETDATE());
 ```
