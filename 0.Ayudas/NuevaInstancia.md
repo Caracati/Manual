@@ -37,9 +37,9 @@
   - Es un servicio de Sistema de Nombres de Dominio (DNS) y Sistema de Nombres de Dominio Seguro (DNSSEC)
   - Dentro de hosted zones
   - En tandrify.com replicar alguno de los registros, en este caso se usó el de deacero.tandrify.com, copiando el valor/Dirigir el tafico a
-  - En crear registro agregar el nombre del nuevo cliente que es el tenat, activar la casilla del alias dirigir el trafico a Alias de la distribución de cloudFront
+  - En crear registro agregar el nombre del nuevo cliente que es el tenat, activar la casilla del alias dirigir el trafico a Alias de la distribución de cloudFront distribution
   - y pegar el valor que se copio previamente
-  - Hacer lo mismo con la api que esta en hosted zones copiando el valor de otro cliente
+  - Hacer lo mismo con la api.tandrify que esta en hosted zones copiando el valor de otro cliente
 - ### FlushDns
   - Desde linea de comandos agregar ipconffig /flushdns para vaciar el cahce de los dns
 - ### Clonar BD de prd a dev
