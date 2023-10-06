@@ -68,7 +68,13 @@ Si surge un conflicto al fusionar una rama, se debe resolver antes de la fusión
 ## Mantenimiento Continuo
 El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilidad de los desarrolladores. Es buena practica eliminar las ramas una vez fusionadas y resueltas.
 
+## Pasos para hacer merge
+- Es necesario trabajar todo de forma local en la rama creada donde se reliazarán los cambios, cuando estos cambios ya estén terminados y con commit se debe de ejecutar 
+  - git checkout dev20220809 -- o la rama de dev donde se este trabajando acutalmente de desarrollo
+  - git pull -- para garantizar que se tiene la ultima versión de dev
+  - git merge {tipo}_descripcion-de-desarrollo
+  - git push -- validar con el equipo de desarrollo que no se tenga algun cambio pendiente
+
 ### Notas
 Si se quere hacer un cambio de un comentario del ULITMO commit realizado se puede usar
 git commit --amend -m "Tipo de arreglo: Comentario nuevo"
-  
