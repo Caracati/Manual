@@ -67,4 +67,8 @@ Si surge un conflicto al fusionar una rama, se debe resolver antes de la fusión
 
 ## Mantenimiento Continuo
 El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilidad de los desarrolladores. Es buena practica eliminar las ramas una vez fusionadas y resueltas.
+
+### Notas
+Si se quere hacer un cambio de un comentario del ULITMO commit realizado se puede usar
+git commit --amend -m "Tipo de arreglo: Comentario nuevo"
   
