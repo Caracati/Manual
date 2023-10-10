@@ -7,7 +7,7 @@
 - git pull 
 - git checkout master
 - git pull
-- git checkout -b master_prov_rts (esta la creo igual y al final la borramos o se queda para futuros pasos )
+- git checkout -b master_prov_rts 
 - git cherry-pick a5b6338 27dd0ef ff901ea c0cc4db 5874927 34ed170
 - git checkout master
 - git merge master_prov_rts
@@ -21,6 +21,7 @@
 - git checkout -b temp_replenishment-fields
 - git cherry-pick a5b6338 27dd0ef ff901ea c0cc4db 5874927 34ed170
 - git reset HEAD~6
+- Realizar los git add (es posible hacer el commit desde vscode)
 - git add "C:\Tandrify\tandrify\angular-app\src\app\@tandrify-app\categories\inventory\replenishment\pie-de-camion-replenishment\pie-de-camion-replenishment.component.html" 
 - git add "C:\Tandrify\tandrify\angular-app\src\app\@tandrify-app\categories\inventory\replenishment\pie-de-camion-replenishment\pie-de-camion-filter\pie-de-camion-filter.component.scss" 
 - git add "C:\Tandrify\tandrify\angular-app\src\app\@tandrify-app\categories\inventory\replenishment\pie-de-camion-replenishment\pie-de-camion-filter\vertex-providers.service.ts"
