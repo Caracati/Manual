@@ -4,7 +4,7 @@ Esta guía establece las reglas y recomendaciones para trabajar en equipo utiliz
 
 ## Ramas
 
-Las ramas deben seguir la siguiente nomenclatura: `{tipo}_descripcion-de-desarrollo`, donde `{tipo}` puede ser:
+Las ramas deben seguir la siguiente nomenclatura: `{tipo}_descripcion-ingles--de-desarrollo`, donde `{tipo}` puede ser:
 
 - `fix`: Para correcciones de errores.
 - `feature`: Para nuevas características.
@@ -13,7 +13,7 @@ Las ramas deben seguir la siguiente nomenclatura: `{tipo}_descripcion-de-desarro
 
 Ejemplo de creación de una rama:
 ```bash
-git checkout -b feature_nueva-funcionalidad
+git checkout -b feature_new-functionality
 ```
 
 ## Commits
