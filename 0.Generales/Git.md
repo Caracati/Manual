@@ -4,7 +4,7 @@ Esta guía establece las reglas y recomendaciones para trabajar en equipo utiliz
 
 ## Ramas
 
-Las ramas deben seguir la siguiente nomenclatura: `{tipo}_descripcion-ingles--de-desarrollo`, donde `{tipo}` puede ser:
+Las ramas deben seguir la siguiente nomenclatura: `{tipo}_descripcion-ingles-de-desarrollo`, donde `{tipo}` puede ser:
 
 - `fix`: Para correcciones de errores.
 - `feature`: Para nuevas características.
