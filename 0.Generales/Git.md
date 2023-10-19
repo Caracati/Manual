@@ -21,7 +21,7 @@ git checkout -b feature_new-functionality
 Los commits deben ser descriptivos y seguir un formato claro. Cada commit debe comenzar con una etiqueta que indique el tipo de cambio y luego una descripción concisa. Las etiquetas comunes son:
 
 - `fix:`: Para correcciones de errores.
-- `feat:`: Para nuevas características.
+- `feature:`: Para nuevas características.
 - `docs:`: Para cambios en la documentación.
 - `style:`: Para mejoras en el formato o estilo del código.
 - `refactor:`: Para refactorizaciones del código.
@@ -30,7 +30,7 @@ Los commits deben ser descriptivos y seguir un formato claro. Cada commit debe c
 
 Ejemplo de un commit:
 ```bash
-git commit -m "feat: Agregar función de autenticación de usuarios"
+git commit -m "feature: agregar función de autenticación de usuarios"
 ```
 ## Pull Requests (PR) 
 >### *Actualmente no se esta utilizando esta opción de PR*
