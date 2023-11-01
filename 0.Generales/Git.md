@@ -84,3 +84,5 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
   - git pull origin master
   - git cherry-pick 0b5783a
   - git push origin master
+
+- Para eliminar un archivo de git que ya fue cargado y tiene seguimiento hay que poner el comando git rm {archivo} --cached, hacer el add . y el commit
