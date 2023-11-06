@@ -30,3 +30,11 @@ select * from tandrify.demandSetting where tenantId = 'adosa' -- da 46 la cual s
   select count(*) from demandResult dr where modelId = 46
 ```
 
+Para acerias, se hizo lo siguintes, 
+1- se creo la instancia de la forma que se tiene documenatada, agregando usarios, y persmisos 
+2- posterior se creo la linea de demanda
+3- se ajustó la lambda para poder tomar en cuenta dicha instancia
+4- se cargaron los archivos de productos, producto tienda, inventario y consumo
+5- también fue necesario agregar en select *
+from tandrify.productAttributeField paf 
+where tenantId = 'acerias'
