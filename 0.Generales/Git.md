@@ -82,7 +82,7 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
 - Cuando se tiene algun commit que se queire subir a master se puede usar en lugar de hacer un merge
   - git checkout master
   - git pull origin master
-  - git cherry-pick 0b5783a
+  - git cherry-pick 0b5783a (commit correspondinte)
   - git push origin master
 
 - Para eliminar un archivo de git que ya fue cargado y tiene seguimiento hay que poner el comando git rm {archivo} --cached, hacer el add . y el commit
