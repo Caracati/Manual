@@ -70,7 +70,7 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
 
 ## Pasos para hacer merge
 - Es necesario trabajar todo de forma local en la rama creada donde se reliazarán los cambios, cuando estos cambios ya estén terminados y con commit se debe de ejecutar 
-  - git checkout dev20220809 -- o la rama de dev donde se este trabajando acutalmente de desarrollo
+  - git checkout dev20220809 -- o la rama de dev donde se este trabajando acutalmente el desarrollo
   - git pull -- para garantizar que se tiene la ultima versión de dev
   - git merge {tipo}_descripcion-de-desarrollo
   - git push -- validar con el equipo de desarrollo que no se tenga algun cambio pendiente
@@ -82,7 +82,10 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
 - Cuando se tiene algun commit que se queire subir a master se puede usar en lugar de hacer un merge
   - git checkout master
   - git pull origin master
-  - git cherry-pick 0b5783a (commit correspondinte)
+  - git cherry-pick 0a4379d (commit correspondinte)
   - git push origin master
 
 - Para eliminar un archivo de git que ya fue cargado y tiene seguimiento hay que poner el comando git rm {archivo} --cached, hacer el add . y el commit
+
+- Para guardar un cambmio en una rama usar git stash push dentro de la rama donde se quiere guardar dicha información
+- Para regreasr la rama con el cambio guardado usar git stash apply o si se quiere borrar el stash usar git stash pop

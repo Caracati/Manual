@@ -32,16 +32,17 @@
 - Crear la clase con las propiedades necesarias
 - Crear los indices en data-models\Tandrify\Data\TandrifyContext.cs
 - ejecutar **dotnet ef migrations add {nombre}** para agregar en la migración
-- Ejecutar **dotnet ef migrations script {{MigraciónPreviaALaAtual}}** para generar el script en cuestión hay que modificar la migarción por la migración previa a la que se hizo actualmente, esto generará un script parecido a esto, Validar que el script cumpla con lo que se realizó
+- Ejecutar **dotnet ef migrations script {{MigraciónPreviaALaAtual}}** para generar el script en cuestión hay que modificar la migarción por la migración previa a la que se hizo actualmente, desde data-models/Tandrify esto generará un script parecido a esto, Validar que el script cumpla con lo que se realizó, deberá de ser el nombre de la clase antes de la migración de alrchivo cs
   - ALTER TABLE `aliasRule` ADD `expirationDate` datetime(6) NULL;
 
     INSERT INTO `__EFMigrationsHistory` (`MigrationId`, `ProductVersion`)
     VALUES ('20231114210412_AliasRuleExpirationDateAdd', '3.1.5');
 - En caso de que se quiera hacer en automatico desde el comando ejecutar la siguiente linea (NO HACERLO)
   - Ejecutar **dotnet ef database update {nombreoajuste}** para que el ajuste se vea reflejado en la base de datos
-- Para finalizar es necesario ejecutar el comando **gulp** para que se haga la transaforamcion a typescript y posterior a js para luego pasarlos a la carpeta correspondiente
+- Para finalizar es necesario ejecutar el comando **gulp** desde data-models/model-exporter para que se haga la transaforamcion a typescript y posterior a js para luego pasarlos a la carpeta correspondiente validar puerto correcto para dev o prd ejemplo secret.port = '3308' se puede valildar desde putty o desde DBeaver o Workbeanch
 - Desde layers de sam app ejecutar el npm run publish-dev para subir los cambios en especifico
-- Posterior a la publicación validar que en Lambda - function - tfy-dev-basicCrud-Crud....(en prd se omite dev) - edit layers y que TandrifyEntitesLayerDev tenga la ultima version del layer
+- Posterior a la publicación validar que en Lambda - function - tfy-dev-basicCrud-Crud....(en prd se omite dev) - edit layers y que TandrifyEntitesLayerDev tenga la ultima version del layer (hay otras layers que modificar para que esto pueda funcionar, como la carga masiva tfy-dev-enginesettingsreceived-DataReceived )
+- Al terminar es necesario dentro de sam app y layers abrir una terminar y ejecutar npm run publish-dev
 
 ## Gulp
 - Es necesario tener python
