@@ -79,7 +79,7 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
 - Si se quere hacer un cambio de un comentario del ULITMO commit realizado se puede usar
   - git commit --amend -m "Tipo de arreglo: Comentario nuevo"
 
-- Cuando se tiene algun commit que se queire subir a master se puede usar en lugar de hacer un merge
+- Cuando se tiene algun commit que se queire subir a master o dev se puede usar en lugar de hacer un merge
   - git checkout master
   - git pull origin master
   - git cherry-pick 0a4379d (commit correspondinte)

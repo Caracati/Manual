@@ -25,7 +25,8 @@
 ## Crear usuario
 - Entrar a IAM
 - En el panel de navegación izquierdo, selecciona "Users" y luego "Create users". 
-- Agregar nombre de usuario y seleccionar Next
+- Agregar nombre de usuario que sería el correo y seleccionar Next
+- Seleccionar provide user acces to the aws y que se autogenere la contraseña 
 - Desde Attach policies directly agregar la politica creada, o en su defecto copiar alguna ya existente
 - ### Crear archivo CSV
   - Para crear el archivo CSV con las credenciales buscar el usuario e ingresar 

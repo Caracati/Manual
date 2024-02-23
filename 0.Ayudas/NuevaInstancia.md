@@ -16,7 +16,7 @@
   - Tipos de concesion de oaut son el de codigo de autorización y concesión implicita
   - Amitos de OpenId Connect es email openid y profile 
   - Permisos de escritura y lectura se qeudan como en el ejemplo
-  - Después de crear el cliente se debe de identficar el id del mismo
+  - Después de crear el cliente se debe de identficar el id del mismo que viene de lado derecho del nombre de app integraion
 - ### DynamoDB
   - Es un servicio de base de datos NoSQL no relacional totalmente administrado ofrecido por Amazon Web Services (AWS). Se utiliza para almacenar y recuperar datos a gran escala con un rendimiento rápido y predecible
   - En tablas, y usando la tabla "TandrifyClientConfiguration" y al explorar los elementos "boton naranja" hay que agregar un nuevo registro desde crear elemento, usando el tenant que seróa el nombre de cliente en minusculas

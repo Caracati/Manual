@@ -18,6 +18,7 @@
   - y hay que tener el archivo Program.cs
   - Se puede tener un servicio de AWS que se llama secret manager par poder tener las contraseñas en dicho servicio
   - El archivo Program.cs debe de ir en la carpta de Data-models - Tandrify 
+  - Para ejecutar dichos comandos hay que estár en data-modles/Tandrify
   - Ejecutar el comando **dotnet ef migration add "nombre de tabla"** para crear el archivo de migración para poder crear la tabla
   - Al ejecutar el comando de forma correcta se crean 2 metodos UP y DOWN para poder regresar en el tiempo 
   - Para agregar la tabla a la base de datos se debe de ejecutar el comando **dotnet ef database update**
@@ -52,3 +53,9 @@
   - en models primero los convierte a TS
   - en exports a JS
   - Los cambia de carpeta
+
+## Eliminar migración
+- Es posible eliminar una migración con el comando dotnet ef migrations remove esto desde data-models/Tandrify
+  - Esto eliminará la ultima migración tender en cuenta que si la migración ya fue aplicada en la bd se deberá de borrar de la tabla 
+    - select * from __EFMigrationsHistory
+  - Posterior eliminar loq ue se haya realizado en la tabla correspondiente
