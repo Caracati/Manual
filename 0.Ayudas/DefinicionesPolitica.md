@@ -13,7 +13,7 @@
 | supplierName      | Nombre del proveedor             |
 | start             | Primera venta del producto dentro de la ventana de tiempo seleccionada|
 | end               | Fecha de fin de la ventana de tiempo                    |
-| periods           | Son los días de venta que tuvo el producto en la ventana de tiempo, este campo va de la mano con minDays ya que este se toma en cuenta si el producto tiene menos ventas de las establecidas, esto se calculó desde el día de su primera compra a más date         |
+| periods           | Son los días de venta que tuvo el producto en la ventana de tiempo, este campo va de la mano con minDays ya que este se toma en cuenta si el producto tiene menos ventas de las establecidas, esto se calculó desde el día de su primera compra a maxdate         |
 | average           | Valor promedio del volumen (piezas vendidas) sobre el periodo.  Volumen / periodo                |
 | sigma             | Desviación estándar del producto              |
 | cv                | Coeficiente de variación, es para determinar qué tan regular o irregular fue la venta; entre más se acerque al cero, es más estable  (sigma / average)       |
