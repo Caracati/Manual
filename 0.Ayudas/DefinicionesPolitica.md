@@ -1,9 +1,8 @@
-## Definiciones de los encabezados en politicas
+## Definiciones de los Encabezados en Políticas
 
-- El objetivo de esta sección es dar a conocer los campos que se tienen en los encabezados al generar un politica y explicar su definición para tener un mejor entendimineto y conceptos de las mismas
+- El objetivo de esta sección es dar a conocer los campos que se tienen en los encabezados al generar una política y explicar su definición para tener un mejor entendimiento y conceptos de las mismas.
 
-- En análisis de la demanda al terminar de ejecutar y correr todas las policitas es posible descargar el archivo final de como quedó la policita del inventario el cual se desglosa en la tabla siguiente
-- Actualmente son 39 headers los que se tienen al 23 de febrero del 2024
+- En análisis de la demanda al terminar de ejecutar y correr todas las políticas es posible descargar el archivo final de cómo quedó la política del inventario, el cual se desglosa en la tabla siguiente. Actualmente son 39 headers los que se tienen al 23 de febrero del 2024.
 
 | Campo             | Descripción                     |
 |-------------------|---------------------------------|
@@ -14,16 +13,16 @@
 | supplierName      | Nombre del proveedor             |
 | start             | Primera venta del producto dentro de la ventana de tiempo seleccionada|
 | end               | Fecha de fin de la ventana de tiempo                    |
-| periods           | Son los días de venta que tuvo el producto en la ventana de tiempo, este campo va de la mano con minDays ya que este se toma en cuenta si el producto tiene menos ventas de las establecidas esto se calculo desde el día de su primer compra a mas date         |
-| average           | Valor promedio del volumen (piezas vendidas) sobre el los periodo.  volumen / periodo                |
+| periods           | Son los días de venta que tuvo el producto en la ventana de tiempo, este campo va de la mano con minDays ya que este se toma en cuenta si el producto tiene menos ventas de las establecidas, esto se calculó desde el día de su primera compra a más date         |
+| average           | Valor promedio del volumen (piezas vendidas) sobre el periodo.  Volumen / periodo                |
 | sigma             | Desviación estándar del producto              |
-| cv                | Coeficiente de variación, es para determinar que tan regular o irregular fue la venta, entre mas se acerque al cero es mas estable  (sigma / average)       |
-| volume            | Son las piezs que se vendieron en la ventana de tiempo establecida            |
-| cost              | Costo total de la venta del producto de la ventan de tiempo, para obtener el costo individual es costo / volumen           |
-| revenue           | Ingresos generados totales de la venta del producto en la ventana de tiempo, para calcular la ganancia por porducto es revenue / volumen              |
-| minDate           | fecha inicial en la Ventana de tiempo real - todo esto se parametriza desde ventnas de tiempo                     |
-| maxDate           | fecha final en la Ventana de tiempo real - todo esto se parametriza desde ventnas de tiempo                     |
-| minDays           | Son los días minimos que puede tener un producto como venta       |
+| cv                | Coeficiente de variación, es para determinar qué tan regular o irregular fue la venta; entre más se acerque al cero, es más estable  (sigma / average)       |
+| volume            | Son las piezas que se vendieron en la ventana de tiempo establecida            |
+| cost              | Costo total de la venta del producto de la ventana de tiempo, para obtener el costo individual es costo / volumen           |
+| revenue           | Ingresos generados totales de la venta del producto en la ventana de tiempo, para calcular la ganancia por producto es revenue / volumen              |
+| minDate           | Fecha inicial en la ventana de tiempo real - todo esto se parametriza desde ventanas de tiempo                     |
+| maxDate           | Fecha final en la ventana de tiempo real - todo esto se parametriza desde ventanas de tiempo                     |
+| minDays           | Son los días mínimos que puede tener un producto como venta       |
 | daysWithDemand    | Son los días en los que ese producto tuvo venta                 |
 | lastDemandDate    | Última fecha de demanda en la que el producto tuvo venta         |
 | zAverage          | Valor Z del promedio             |
@@ -46,3 +45,4 @@
 | target            | Objetivo es el inventario meta                        |
 | reorder           | Punto de reorden                        |
 | safety            | Inventario de seguridad    |
+
