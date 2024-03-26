@@ -42,7 +42,7 @@
   - Ejecutar **dotnet ef database update {nombreoajuste}** para que el ajuste se vea reflejado en la base de datos
 - Para finalizar es necesario ejecutar el comando **gulp** desde data-models/model-exporter para que se haga la transaforamcion a typescript y posterior a js para luego pasarlos a la carpeta correspondiente validar puerto correcto para dev o prd ejemplo secret.port = '3308' se puede valildar desde putty o desde DBeaver o Workbeanch
 - Desde layers de sam app ejecutar el npm run publish-dev para subir los cambios en especifico
-- Posterior a la publicación validar que en Lambda - function - tfy-dev-basicCrud-Crud....(en prd se omite dev) - edit layers y que TandrifyEntitesLayerDev tenga la ultima version del layer (hay otras layers que modificar para que esto pueda funcionar, como la carga masiva tfy-dev-enginesettingsreceived-DataReceived )
+- Posterior a la publicación validar que en Lambda - function - tfy-dev-basicCrud-Crud....(en prd se omite dev) - edit layers y que TandrifyEntitesLayerDev tenga la ultima version del layer (hay otras layers que modificar para que esto pueda funcionar, como la carga masiva tfy-dev-enginesettingsreceived-DataReceived ) y tfy-enginearmy-policyMaster
 - Al terminar es necesario dentro de sam app y layers abrir una terminar y ejecutar npm run publish-dev
 
 ## Gulp

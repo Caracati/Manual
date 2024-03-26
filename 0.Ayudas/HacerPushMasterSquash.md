@@ -33,3 +33,7 @@
 - git pull origin master
 - git cherry-pick 0b5783a
 - git push origin master
+- #### Squashed con rebase
+- git checkout {Rama actual para combinar el commit}
+- git rebase -i HEAD~6 (DONDE 6 ES EL NUMEOR DE COMMITS A UNIR)
+- Ajustar los comits que se ven en pantalla cambiando pick por s y dejando solo el ultimo com pick para que ese sea el comit que se quiera dejar 

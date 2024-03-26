@@ -89,3 +89,7 @@ El mantenimiento de las ramas y la limpieza de ramas obsoletas es responsabilida
 
 - Para guardar un cambmio en una rama usar git stash push dentro de la rama donde se quiere guardar dicha información
 - Para regreasr la rama con el cambio guardado usar git stash apply o si se quiere borrar el stash usar git stash pop
+
+para forzar a dejar la rama con un commit pasado 
+
+git reset --hard <commit>
